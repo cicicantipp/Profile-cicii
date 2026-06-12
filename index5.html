@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susiiayy</title>
+    <link rel="stylesheet" href="Style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head> 
+<body>
+<img src="background.gif" id="bg-gif">
+<!-- POPUP WELCOME -->
+<div id="welcomePopup" class="popup">
+    <div class="popup-box">
+        <h2>Want to know a little about cicii?</h2>
+        <button onclick="masuk()">yes</button>
+        <button onclick="keluar()">no</button>
+    </div>
+</div>
+
+<!-- HOME -->
+<div id="home" class="page">
+
+    <div class="home-container">
+
+        <h3>Hello, Welcome!</h3>
+
+        <img src="profil.jpeg" alt="Foto Home" class="foto-home">
+
+        <div class="menu-box">
+
+            <div class="card" onclick="showPage('portofolio')">
+                ABOUT
+            </div>
+
+            <div class="card" onclick="showPage('galeri')">
+                MOMENTS
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PORTOFOLIO -->
+<div id="portofolio" class="page">
+
+    <div class="container">
+
+        <div class="sidebar">
+
+            <img src="pp.jpeg" alt="Foto Profil">
+
+            <h2>SUSIAYY</h2>
+
+            <p class="motto">
+                "Never give up before you are rich"
+            </p>
+
+          <div class="project">
+            <h3>Explore My Projects</h3>
+
+            <ul>
+                <li onclick="window.open('https://kopican-idcicii.pages.dev/')">
+                    🔗 Promotion Website
+                </li>
+
+                <li onclick="window.open('https://github.com/cicicantipp','_blank')">
+                    🔗 Company Profile Progress
+                </li>
+            </ul>
+        </div>
+            <div class="hobi">
+                <h3>Hobby</h3>
+                <ul>
+                    <li onclick="bukaHobi()" class="klik-hobi">
+                        🚴 see hobbies
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-section">
+
+            <h3>Social Media</h3>
+
+            <div class="social-buttons">
+            
+                <a href="https://www.instagram.com/susiiayy" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://github.com/cicicantipp" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@iniiciciioo?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a class="linkedin" href="https://www.linkedin.com/in/susi-716268384/" target="_blank">
+                     <i class="fa-brands fa-linkedin"></i>
+                </a> 
+            </div>
+
+        </div>
+
+        </div>
+
+        <div class="main">
+
+            <div class="section">
+
+                <h3>About me</h3>
+
+                <p>
+                    I'm a high school graduate with a strong interest in IT.
+                    Although I'm new to programming and other IT-related topics, I'm still striving to learn diligently.
+                    I'm currently a student at UNM in the Computer Engineering Study Program.
+                </p>
+
+            </div>
+
+            <div class="section">
+
+                <h3>Personal Information</h3>
+
+                <p><b>Name :</b> Susi</p>
+                <p><b>Nickname :</b> Cicii</p>
+                <p><b>Place, Date of Birth :</b> Bantaeng, August 8, 2006</p>
+                <p><b>Gender :</b> Female</p>
+                <p><b>Status :</b> Student</p>
+                <p><b>Address :</b> Kab.Bantaeng, Sulawesi Selatan</p>
+
+            </div>
+
+            <div class="section">
+
+                <h3>Education</h3>
+
+                <p><b>2012 - 2018 :</b> SD Inpres Taruttu Campaga</p>
+                <p><b>2018 - 2021 :</b> MTSs Al Mansyur Biangloe</p>
+                <p><b>2021 - 2024 :</b> SMAN 4 Bantaeng</p>
+                <p><b>2024 - Now  :</b> Universitas Negeri Makassar</p>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="back-btn" onclick="showPage('home')">
+        ⬅ Back
+    </button>
+
+</div>
+
+<!-- GALERI -->
+<div id="galeri" class="page">
+
+    <div class="container">
+
+        <div class="main">
+
+            <h3>Volunteer Journey</h3>
+
+            <div class="galeri">
+
+                <div class="galeri">
+
+            <div class="story-card" onclick="bukaAlbum('Stories from the Field')">
+                <img src="gts11.jpeg" alt="Momen Kampus">
+                <h4>Gather To Share Batch 3</h4>
+            </div>
+
+            <div class="story-card" onclick="bukaAlbum('Sharing Happiness')">
+                <img src="tk1.jpeg" alt="Sahabat">
+                <h4>TerimaKasihOfficial</h4>
+            </div>
+
+            <div class="story-card" onclick="bukaAlbum('Together We Care')">
+                <img src="pm1 (4).jpeg" alt="Pengalaman">
+                <h4>Peduly Volunteer Makassar</h4>
+            </div>
+
+
+        </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="back-btn" onclick="showPage('home')">
+        ⬅ Back
+    </button>
+
+</div>
+
+<!-- POPUP ALBUM -->
+<div id="albumPopup" class="album-popup">
+
+    <div class="album-content">
+
+        <span class="close-btn" onclick="tutupAlbum()">&times;</span>
+
+        <h2 id="albumTitle">Dokumentasi</h2>
+
+        <div id="album-gts" class="album-galeri">
+
+            <img src="gts1.jpeg" alt="">
+            <img src="gts2.jpeg" alt="">
+            <img src="gts3.jpeg" alt="">
+            <img src="gts4.jpeg" alt="">
+            <img src="gts5.jpeg" alt="">
+            <img src="gts6.jpeg" alt="">
+            <img src="gts7.jpeg" alt="">
+            <img src="gts8.jpeg" alt="">
+            <img src="gts9.jpeg" alt="">
+            <img src="gts10.jpeg" alt="">
+            <img src="gts12.jpeg" alt="">
+            <img src="gts13.jpeg" alt="">
+            <img src="gts14.jpeg" alt="">
+            <img src="gts16.jpeg" alt="">
+
+        </div>
+
+        <div id="album-temankasih" class="album-galeri" style="display:none;">
+            <img src="tk4.jpeg">
+            <img src="tk2.jpeg">
+            <img src="tk3.jpeg">
+            <img src="tk5.jpeg">
+            <img src="tk6.jpeg">
+            <img src="tk7.jpeg">
+            <img src="tk8.jpeg">
+            <img src="tk9.jpeg">
+            <img src="tk10.jpeg">
+            <img src="tk11.jpeg">
+            <img src="tk12.jpeg">
+            <img src="tk13.jpeg">
+            <img src="tk14.jpeg">
+            <img src="tk15.jpeg">
+            <img src="tk16.jpeg">
+            <img src="tk17.jpeg">
+            <img src="tk18.jpeg">
+            <img src="tk19.jpeg">
+            <img src="tk20.jpeg">
+            <img src="tk21.jpeg">
+            <img src="tk22.jpeg">
+            <img src="tk23.jpeg">
+            <img src="tk24.jpeg">
+        </div>
+
+        <div id="album-peduli" class="album-galeri" style="display:none;">
+             <img src="pm1 (1).jpeg">
+            <img src="pm1 (2).jpeg">
+            <img src="pm1 (3).jpeg">
+            <img src="pm1 (5).jpeg">
+            <img src="pm1 (6).jpeg">
+            <img src="pm1 (7).jpeg">
+            <img src="pm1 (8).jpeg">
+            <img src="pm1 (9).jpeg">
+            <img src="pm1 (10).jpeg">
+            <img src="pm1 (11).jpeg">
+            <img src="pm1 (12).jpeg">
+            <img src="pm1 (13).jpeg">
+            <img src="pm1 (14).jpeg">
+            <img src="pm1 (15).jpeg">
+            <img src="pm1 (16).jpeg">
+            <img src="pm1 (17).jpeg">
+            <img src="pm1 (18).jpeg">
+            <img src="pm1 (19).jpeg">
+            <img src="pm1 (20).jpeg">
+            <img src="pm1 (21).jpeg">
+            <img src="pm1 (22).jpeg">
+        </div>
+
+        <div id="catatan-gts" class="catatan">
+        <div class="note-item">
+            <span>📍</span>
+            <p>Dusun Laha-Laha, Desa Terasa, Sinjai Barat, Kab. Sinjai</p>
+        </div>
+
+        <div class="note-item">
+            <span>📅</span>
+            <p>23 - 29 Oktober 2025</p>
+        </div>
+
+        <div class="note-item">
+            <span>🎯</span>
+            <p><b>Tema:</b> Bersama, Berbagi dan Berdampak</p>
+        </div>
+
+        <h3>Notes</h3>
+        <div class="note-item">
+            <h5>"We came with the goal of serving and sharing, but we returned with hearts filled with gratitude.
+                 Every moment we spent with the community taught us that togetherness, caring, health,
+                 the opportunity to learn, and the ability to help others are invaluable gifts.
+                 This experience will always remind us not to just look at what's missing in life,
+                 but also to be grateful for what we already have."</h5>
+              <p>
+                <a class="note-link" href="https://www.instagram.com/reel/DRejqjPj6g-/?igsh=MXA1c2l3Zjk5b2ozeA==" target="_blank">📽️klik</a>
+             </p>
+        </div>
+        </div>
+
+        <div id="catatan-temankasih" class="catatan" style="display:none;">
+          <div class="note-item">
+            <span>📍</span>
+            <p>Panti Maarifah</p>
+        </div>
+
+        <div class="note-item">
+            <span>📅</span>
+            <p>Sabtu 14 Maret 2026</p>
+        </div>
+
+        <div class="note-item">
+            <span>🎯</span>
+            <p><b>Tema:</b> Creative Bites, Menghias Kue Bersama Adik Panti</p>
+        </div>
+ 
+        <h3>Notes</h3>
+        <div class="note-item">
+            <h5>"Simple, meaningful moments, from decorating cakes to breaking the fast with the children at the orphanage, 
+                 were invaluable experiences that taught us the meaning of togetherness, caring, and gratitude. 
+                 Every smile and story we shared became a beautiful memory we will always cherish."</h5>
+              <p>
+                <a class="note-link" href="https://www.instagram.com/p/DWBrt-wmg0_/?igsh=dnkxa2k4bnR4ajRk" target="_blank">📽️klik</a>
+             </p>  
+        </div> 
+        </div> 
+
+        <div id="catatan-peduli" class="catatan" style="display:none;">
+          <div class="note-item">
+            <span>📍</span>
+            <p>Pulau Samalona</p>
+        </div>
+
+        <div class="note-item">
+            <span>📅</span>
+            <p>15 - Maret 2026</p>
+        </div>
+
+        <div class="note-item">
+            <span>🎯</span>
+            <p><b>Tema:</b> Beach Clean Up & Fun Games di Pulau Samalona, PEDULI BERBAGI KEBAIKAN</p>
+        </div>
+
+        <h3>Notes</h3>
+        <div class="note-item">
+            <h5>"Starting with the small step of picking up trash, we worked together to preserve the beauty of this island, 
+                 which is part of our natural heritage. The activity then continued with various games that fostered enthusiasm, joy, and togetherness. 
+                 A day that taught us that caring for the environment and togetherness are two things that can have a positive impact on many people."</h5>
+              <p>
+                <a class="note-link" href="https://www.instagram.com/p/DWin7Fdk3Gb/?img_index=15&igsh=dGxoa3loZHZlbXRz" target="_blank">📽️klik</a>
+             </p>  
+        </div>  
+        </div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+
+    function showPage(pageId) {
+
+        document.querySelectorAll(".page").forEach(function(page) {
+            page.classList.remove("active");
+        });
+
+        document.getElementById(pageId).classList.add("active");
+    }
+
+    function masuk() {
+
+        document.getElementById("welcomePopup").style.display = "none";
+
+        document.getElementById("home").classList.add("active");
+    }
+
+    function keluar() {
+    document.querySelector(".popup-box").innerHTML = `
+        <div class="popup-content">
+            <h2>Timacii, See youu</h2>
+            <img src="lupi.png"alt="Foto">
+        </div>
+    `;
+}
+
+function bukaAlbum(judul){
+
+    document.getElementById("albumPopup").style.display = "flex";
+    document.getElementById("albumTitle").innerText = judul;
+
+    document.getElementById("album-gts").style.display = "none";
+    document.getElementById("album-temankasih").style.display = "none";
+    document.getElementById("album-peduli").style.display = "none";
+
+    document.getElementById("catatan-gts").style.display = "none";
+    document.getElementById("catatan-temankasih").style.display = "none";
+
+    const peduli = document.getElementById("catatan-peduli");
+    if(peduli){
+        peduli.style.display = "none";
+    }
+
+    if(judul=="Stories from the Field"){
+        document.getElementById("album-gts").style.display = "grid";
+        document.getElementById("catatan-gts").style.display = "block";
+    }
+
+    else if(judul=="Sharing Happiness"){
+        document.getElementById("album-temankasih").style.display = "grid";
+        document.getElementById("catatan-temankasih").style.display = "block";
+    }
+
+    else if(judul=="Together We Care"){
+        document.getElementById("album-peduli").style.display = "grid";
+        document.getElementById("catatan-peduli").style.display = "block";
+    }
+}
+function tutupAlbum(){
+    document.getElementById("albumPopup").style.display = "none";
+}
+
+function bukaHobi(){
+
+    document.getElementById("hobiPopup").style.display="flex";
+
+}
+
+
+function tutupHobi(){
+
+    document.getElementById("hobiPopup").style.display="none";
+
+}
+</script>
+<!-- POPUP HOBI -->
+<div id="hobiPopup" class="hobi-popup">
+
+    <div class="hobi-box">
+        <h2>🚴 My Cycling Moments</h2>
+
+        <img src="olahraga (1).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (2).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (3).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (4).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (5).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (6).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (7).jpeg" alt="Foto Sepeda">
+        <img src="olahraga (8).jpeg" alt="Foto Sepeda">
+
+        <button class="back-btn" onclick="tutupHobi()">
+         ⬅ Back
+        </button>
+    </div>
+</div>
+
+</body>
+</html>
