@@ -889,25 +889,29 @@ body {
 }
 
 /* =========================
-   RESPONSIVE HP
-========================= */
-/* =========================
-   RESPONSIVE HP FIX
+   RESPONSIVE SEMUA HP ANDROID
 ========================= */
 
-@media (max-width:768px){
+@media screen and (max-width: 768px){
+
+    *{
+        box-sizing:border-box;
+    }
+
 
     body{
         overflow-x:hidden;
     }
 
 
-    /* BACKGROUND GIF FULL */
+    /* BACKGROUND */
     #bg-gif{
+
         width:100%;
         height:100vh;
+
         object-fit:cover;
-        object-position:center;
+
     }
 
 
@@ -915,10 +919,12 @@ body {
     /* DASHBOARD */
     .container{
 
-        width:90%;
+        width:94%;
+
         margin:20px auto;
 
         display:flex;
+
         flex-direction:column;
 
         border-radius:20px;
@@ -930,16 +936,18 @@ body {
     /* SIDEBAR */
     .sidebar{
 
-        width:auto;
-        padding:20px;
+        width:100%;
+
+        padding:20px 15px;
 
     }
 
 
     .sidebar img{
 
-        width:100px;
-        height:100px;
+        width:110px;
+
+        height:110px;
 
     }
 
@@ -951,18 +959,13 @@ body {
     }
 
 
-    .motto{
-
-        font-size:12px;
-
-    }
-
-
 
     /* PROJECT */
-    .project{
+    .project,
+    .hobi,
+    .social-section{
 
-        margin-top:15px;
+        width:100%;
 
     }
 
@@ -971,8 +974,9 @@ body {
     .hobi h3,
     .social-section h3{
 
-        font-size:18px;
         text-align:center;
+
+        font-size:18px;
 
     }
 
@@ -980,8 +984,9 @@ body {
     .project ul li,
     .hobi ul li{
 
-        font-size:13px;
-        padding:10px;
+        width:100%;
+
+        font-size:14px;
 
         text-align:center;
 
@@ -989,6 +994,149 @@ body {
 
 
 
+
+    /* SOCIAL MEDIA */
+
+    .social-buttons{
+
+        display:flex;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+
+    .social-buttons a{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:20px;
+
+    }
+
+
+
+
+
+    /* ABOUT */
+
+    .main{
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+
+    .main h3{
+
+        font-size:22px;
+
+        text-align:left;
+
+    }
+
+
+    .main p{
+
+        font-size:14px;
+
+        line-height:1.7;
+
+    }
+
+
+
+
+
+    /* VOLUNTEER */
+
+    #galeri .container{
+
+        width:94%;
+
+    }
+
+
+    #galeri .main h3{
+
+        font-size:22px;
+
+        text-align:center;
+
+    }
+
+
+    .galeri{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:30px;
+
+    }
+
+
+    .story-card{
+
+        width:180px;
+
+    }
+
+
+    .story-card img{
+
+        width:150px;
+
+        height:150px;
+
+    }
+
+
+    .story-card h4{
+
+        font-size:14px;
+
+    }
+
+
+
+
+    /* POPUP HOBI */
+
+    .hobi-box{
+
+        width:92%;
+
+        max-height:90vh;
+
+        padding:15px;
+
+    }
+
+
+    .hobi-box img{
+
+        width:110px;
+
+        height:110px;
+
+        margin:5px;
+
+    }
+
+
+}
     /* SOCIAL ICON */
     .social-buttons{
 
