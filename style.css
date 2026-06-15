@@ -888,100 +888,191 @@ body {
 
 }
 
+/* =========================
+   RESPONSIVE HP
+========================= */
 @media (max-width:768px){
 
-.container{
-    width:95%;
-    display:flex;
-    flex-direction:row;
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* background gif full layar */
+    #bg-gif{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        object-position:center;
+    }
+
+
+    /* dashboard tetap satu layar */
+    .container{
+
+        width:95%;
+        margin:20px auto;
+
+        display:flex;
+        flex-direction:row;
+
+        border-radius:15px;
+
+    }
+
+
+    /* sidebar mengecil */
+    .sidebar{
+
+        width:35%;
+        padding:15px;
+
+    }
+
+
+    .sidebar img{
+
+        width:90px;
+        height:90px;
+
+    }
+
+
+    .sidebar h2{
+
+        font-size:18px;
+
+    }
+
+
+    .motto{
+
+        font-size:11px;
+
+    }
+
+
+    /* project mengecil */
+    .project h3,
+    .hobi h3,
+    .social-section h3{
+
+        font-size:14px;
+
+    }
+
+
+    .project ul li,
+    .hobi ul li{
+
+        font-size:11px;
+        padding:8px;
+
+    }
+
+
+    /* icon social kecil */
+    .social-buttons{
+
+        gap:8px;
+
+    }
+
+
+    .social-buttons a{
+
+        width:30px;
+        height:30px;
+
+        font-size:16px;
+
+    }
+
+
+
+    /* bagian about */
+    .main{
+
+        width:65%;
+        padding:15px;
+
+    }
+
+
+    .main h3{
+
+        font-size:16px;
+
+    }
+
+
+    .main p{
+
+        font-size:11px;
+        line-height:1.5;
+
+    }
+
+
+
+    /* volunteer journey tidak kepotong */
+    #galeri .container{
+
+        width:95%;
+
+    }
+
+
+    #galeri .main h3{
+
+        font-size:20px;
+
+        white-space:nowrap;
+
+    }
+
+
+    .story-card{
+
+        width:120px;
+
+    }
+
+
+    .story-card img{
+
+        width:110px;
+        height:110px;
+
+    }
+
+
+    .story-card h4{
+
+        font-size:11px;
+
+    }
+
+
+
+    /* popup project/hobi */
+    .hobi-box{
+
+        width:90%;
+        padding:15px;
+
+    }
+
+
+    .hobi-box img{
+
+        width:100px;
+        height:100px;
+
+    }
+
+
 }
-
-.sidebar{
-    width:35%;
-    padding:12px;
-}
-
-.main{
-    width:65%;
-    padding:15px;
-}
-
-
-.sidebar img{
-    width:80px;
-    height:80px;
-}
-
-
-.sidebar h2{
-    font-size:14px;
-}
-
-
-.motto{
-    font-size:10px;
-}
-
-
-.main h3{
-    font-size:14px;
-}
-
-
-.main p{
-    font-size:11px;
-}
-
-
-.project ul li,
-.hobi ul li{
-    font-size:10px;
-    padding:7px;
-}
-
-
-.social-buttons{
-    gap:8px;
-}
-
-
-.social-buttons a{
-    width:30px;
-    height:30px;
-    font-size:15px;
-}
-
-
-
-/* VOLUNTEER */
-#galeri .container{
-    width:95%;
-}
-
-
-#galeri .main{
-    width:100%;
-}
-
-
-#galeri .main h3{
-    font-size:20px;
-    white-space:normal;
-}
-
-
-.story-card{
-    width:100px;
-}
-
-
-.story-card img{
-    width:90px;
-    height:90px;
-}
-
-}
-
 /* SOCIAL MEDIA */
 .social-buttons{
     justify-content:center;
